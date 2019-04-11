@@ -1,0 +1,32 @@
+<h1>じゃんけん</h1>
+
+<h2>p1</h2>
+<label for="p1-name">名前</label>
+<input [(ngModel)]="gamePlayer1.name" id='p1-name' type="text"/>
+
+<label for='p1-throw-hand'>出し手</label>
+<select [(ngModel)]="gamePlayer1.throwHand" id='p1-throw-hand'>
+  <option selected></option>
+  <option value='ROCK'>ROCK</option>
+  <option value='SCISSORS'>SCISSORS</option>
+  <option value='PAPER'>PAPER</option>
+</select>
+
+<br>
+
+<h2>p2</h2>
+<label for="p2-name">名前</label>
+<input [(ngModel)]="gamePlayer2.name" id='p2-name' type="text"/>
+
+<label for='p2-throw-hand'>出し手</label>
+<select [(ngModel)]="gamePlayer2.throwHand" id='p2-throw-hand'>
+  <option selected></option>
+  <option value='ROCK'>ROCK</option>
+  <option value='SCISSORS'>SCISSORS</option>
+  <option value='PAPER'>PAPER</option>
+</select>
+
+<button (click)="onClick()">play</button>
+
+<p>{{gameResult?.result}}</p>
+
