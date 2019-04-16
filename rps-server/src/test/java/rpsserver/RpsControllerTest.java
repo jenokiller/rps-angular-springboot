@@ -80,7 +80,6 @@ public class RpsControllerTest {
 
         ObjectMapper mapper = new ObjectMapper();
         String jsonInString = mapper.writeValueAsString(gameResult);
-        System.out.println(jsonInString);
 
 
         assertEquals(response.getContentAsString(), jsonInString);

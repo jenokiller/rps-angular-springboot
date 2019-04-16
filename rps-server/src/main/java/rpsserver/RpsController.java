@@ -16,7 +16,6 @@ public class RpsController {
 
     @GetMapping
     public GameResult getResult(@RequestParam Map<String, String> params) {
-        System.out.println(params);
         if (params.get("p1Name").equals("")
             || params.get("p1ThrowHand").equals("")
             || params.get("p2Name").equals("")
