@@ -16,8 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    cd rps-client
     npm install -g @angular/cli
     npm install
-    cd rps-client
     ng build --prod
   displayName: 'npm install and build'
